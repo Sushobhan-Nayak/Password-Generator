@@ -13,28 +13,6 @@ letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
 numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+', '@']
 
-# total = nlet + nnumb + nsymb
-
-# password = ""
-# count1 = count2 = count3 = 0
-
-# while len(password) != total:
-
-#     guess = random.randint(1, 3)
-
-#     if guess == 1 and count1 != nlet:
-#         password += random.choice(letters)
-#         count1 += 1
-#     if guess == 2 and count2 != nnumb:
-#         password += random.choice(numbers)
-#         count2 += 1
-#     if guess == 3 and count3 != nsymb:
-#         password += random.choice(symbols)
-#         count3 += 1
-
-# print(f"Your password is {password}")
-
-
 password_list = []
 
 for char in range(1, nlet + 1):
