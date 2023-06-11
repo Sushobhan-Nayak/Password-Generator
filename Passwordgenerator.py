@@ -16,15 +16,15 @@ symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+', '@']
 password_list = []
 
 for char in range(1, nlet + 1):
-  password_list.append(random.choice(letters))
+  password_list.append(random.SystemRandom().choice(letters))
 
 for char in range(1, nsymb + 1):
-  password_list.append(random.choice(symbols))
+  password_list.append(random.SystemRandom().choice(symbols))
 
 for char in range(1, nsymb + 1):
-  password_list.append(random.choice(numbers))
+  password_list.append(random.SystemRandom().choice(numbers))
 
-random.shuffle(password_list)
+random.SystemRandom().shuffle(password_list)
 
 password = ""
 
